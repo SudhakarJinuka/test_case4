@@ -12,7 +12,7 @@ pipeline {
         DEST_HOST   = '10.128.0.28'
         DEST_PATH   = '/home/sjinuka/'
 
-        FILE_NAME   = '/home/sjinuka/sample_data2.csv'
+        FILE_NAME   = '/home/sjinuka/sample_data3.csv'
     }
 
     stages {
