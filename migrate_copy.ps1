@@ -11,15 +11,9 @@ param (
 # Specify identity file path
 $IdentityFile = "~/.ssh/id_rsa"  # Or the correct key path
 
+
+
 Write-Host "Executing remote SCP via SSH..."
 ssh -i $IdentityFile -o StrictHostKeyChecking=no ${DestinationUser}@${DestinationHost}:$pwd"
 
-Write-Host "Abive is PWD."
-
-# scp from source to destination
-#$scpCommand = "scp -i $IdentityFile -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $CsvFilePath ${DestinationUser}@${DestinationHost}:$TargetPath"
-#scp sample_data2.csv sjinuka@10.128.0.28:/home/sjinuka/
-# SSH into source and execute SCP
-#$sshCommand = "ssh -i $IdentityFile -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ${SourceUser}@${SourceHost} '$scpCommand'"
-
-#Invoke-Expression $sshCommand
+Write-Host "THis is your pwd."
